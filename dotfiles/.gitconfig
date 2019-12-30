@@ -1,6 +1,6 @@
 [user]
-	name = Casey Webb
-	email = notcaseywebb@gmail.com
+	name = James Jarvis
+	email = git@jamesjarvis.io
 	signingkey = A81562266B0C8121
 [core]
 	editor = code --new-window --wait
