@@ -1,11 +1,13 @@
 [user]
 	name = James Jarvis
 	email = git@jamesjarvis.io
-	signingkey = A81562266B0C8121
+	signingkey = 7029D6DF3A43BCE480005A103EECC68CF7CF2882
 [core]
 	editor = code --new-window --wait
 [commit]
 	gpgsign = true
+[credential]
+	helper = osxkeychain
 [diff]
 	tool = vscode
 [merge]

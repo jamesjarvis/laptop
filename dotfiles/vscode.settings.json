@@ -1,6 +1,4 @@
-// Place your settings in this file to overwrite the default settings
 {
-  // "editor.fontFamily": "Inconsolata",
   "editor.fontFamily": "'Fira Code'",
   "editor.tabSize": 2,
   "editor.formatOnType": true,
@@ -9,12 +7,18 @@
   "editor.renderWhitespace": "boundary",
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "workbench.colorTheme": "Flatland Monokai",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.showTabs": false,
   "extensions.autoUpdate": true,
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 3000,
   "files.exclude": {
     "**/node_modules": true,
     "**/dist": false,
@@ -27,12 +31,14 @@
     "**/package-lock.json": true,
     "**/*.min.js": true
   },
-  "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
   "tslint.enable": true,
   "tslint.autoFixOnSave": true,
   "tslint.run": "onType",
   "window.zoomLevel": 0,
   "explorer.confirmDragAndDrop": false,
+  "gitlens.keymap": "chorded",
+  "gitlens.codeLens.scopes": ["document", "containers"],
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -45,18 +51,18 @@
     "suppressUpdateNotice": false,
     "suppressWelcomeNotice": true
   },
-  "workbench.startupEditor": "newUntitledFile",
-  "gitlens.codeLens.scopes": [
-    "document",
-    "containers"
-  ],
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "diffEditor.ignoreTrimWhitespace": true,
-  "gitlens.keymap": "chorded",
   "todohighlight.keywords": [
     {
       "text": "@TODO",
       "color": "white",
       "backgroundColor": "red"
     }
-  ]
+  ],
+  "go.autocompleteUnimportedPackages": true,
+  "go.inferGopath": true,
+  "go.useLanguageServer": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

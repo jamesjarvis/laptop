@@ -19,6 +19,8 @@ function _upgrade_brew() {
 
 cd ~/.laptop
 
+# Brew Bundle dump
+
 brew bundle dump --force
 
 if git status | grep -q Brewfile; then
@@ -40,6 +42,15 @@ if [ -f ~/.brew-update ]; then
   fi
 else
   _update_brew_update
+fi
+
+# VSCode Extension update
+
+code --list-extensions > vscode-extensions
+
+if git status | grep -q vscode-extensions; then
+  git add vscode-extensions
+  sh -c "cd ~/.laptop && git commit -m \":factory: (vscode) [automated] sync vscode extensions\" && git push" 2>&1 > /dev/null
 fi
 
 cd -

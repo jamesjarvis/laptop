@@ -37,6 +37,8 @@ plugins=(git zsh-autosuggestions yarn-autocompletions)
 
 ssh-add ~/.ssh/id_rsa &>/dev/null
 
+if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
+
 . `brew --prefix`/etc/profile.d/z.sh
 
 eval "$(rbenv init -)"
@@ -46,18 +48,6 @@ chmod +x ~/.laptop/scripts/*.sh
 for script in ~/.laptop/scripts/20-*.sh; do source $script; done
 for script in ~/.laptop/scripts/30-*.sh; do screen -dm -S Shared $script; done
 
-[ -f /Users/jamesjarvis/.travis/travis.sh ] && source /Users/jamesjarvis/.travis/travis.sh
-
 curl -s https://api.github.com/zen | sed 's/\n//'
 
-# when c --calendar_today_style="bold,fgyellow"
-when w --no-header --no-paging
-
 autoload -U promptinit; promptinit
-prompt spaceship
-
-
-source "/Users/jamesjarvis/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
-
-source "/Users/jamesjarvis/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
