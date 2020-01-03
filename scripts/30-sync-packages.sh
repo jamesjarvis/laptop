@@ -24,8 +24,8 @@ cd ~/.laptop
 brew bundle dump --force
 
 if git status | grep -q Brewfile; then
-  git add Brewfile
-  sh -c "cd ~/.laptop && git commit -m \":factory: (homebrew) [automated] sync packages\" && git push" 2>&1 > /dev/null
+  # git add Brewfile
+  # sh -c "cd ~/.laptop && git commit -m \":factory: (homebrew) [automated] sync packages\" && git push" 2>&1 > /dev/null
 fi
 
 if [ -f ~/.brew-update ]; then
@@ -49,8 +49,8 @@ fi
 code --list-extensions > vscode-extensions
 
 if git status | grep -q vscode-extensions; then
-  git add vscode-extensions
-  sh -c "cd ~/.laptop && git commit -m \":factory: (vscode) [automated] sync vscode extensions\" && git push" 2>&1 > /dev/null
+  # git add vscode-extensions
+  # sh -c "cd ~/.laptop && git commit -m \":factory: (vscode) [automated] sync vscode extensions\" && git push" 2>&1 > /dev/null
 fi
 
 cd -

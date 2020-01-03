@@ -1,19 +1,14 @@
 {
-  "editor.fontFamily": "'Fira Code'",
   "editor.tabSize": 2,
   "editor.formatOnType": true,
   "editor.cursorBlinking": "phase",
   "editor.fontLigatures": true,
-  "editor.renderWhitespace": "boundary",
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
   "editor.suggestSelection": "first",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "Flatland Monokai",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.showTabs": false,
   "extensions.autoUpdate": true,
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
@@ -52,7 +47,6 @@
     "suppressWelcomeNotice": true
   },
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "diffEditor.ignoreTrimWhitespace": true,
   "todohighlight.keywords": [
     {
       "text": "@TODO",
