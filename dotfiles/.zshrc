@@ -43,6 +43,8 @@ if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew comma
 
 eval "$(rbenv init -)"
 
+eval $(thefuck --alias)
+
 chmod +x ~/.laptop/scripts/*.sh
 
 for script in ~/.laptop/scripts/20-*.sh; do source $script; done

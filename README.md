@@ -42,7 +42,7 @@ For install and configuration scripts (system and environment) the second digit 
 
 #### Secrets
 
-[Keybase][] is used to securely sync secrets (ssh & gpg keys, private environment variables).
+[Keybase][] is used to securely sync secrets (gpg keys and private environment variables).
 
 tl;dr it creates a `/keybase` directory that is mounted via the network (configuration uses symlinks, so these never touch your disk). If you aren't familiar with Keybase, you should check it out further (no affiliation, it's just a fantastic product).
 
@@ -50,9 +50,7 @@ This setup will automatically import the following files:
 
 ```
 /keybase/private/*/
-├── gpg
-│   └── private.asc
-├── ssh
+├── .keys
 │   └── *
 └── vars.sh         // secure environment variables  (e.g. `export AWS_ACCESS_KEY_ID=...`)
 ```
