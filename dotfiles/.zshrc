@@ -39,10 +39,6 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 
 if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
-. `brew --prefix`/etc/profile.d/z.sh
-
-eval "$(rbenv init -)"
-
 eval $(thefuck --alias)
 
 chmod +x ~/.laptop/scripts/*.sh
