@@ -2,7 +2,7 @@
 
 if ! command -v brew > /dev/null 2>&1; then
   echo "Installing homebrew"
-  yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 if ! command -v git > /dev/null 2>&1; then
